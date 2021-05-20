@@ -65,6 +65,10 @@ hr {
 	border: 0;
 }
 /* Navigation */
+#title {
+	color: #cc0033;
+	font-size: larger;
+}
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
@@ -78,13 +82,13 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	color: #333;
+	color: #d12c55;
 	text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	color: #555;
+	color: #d12c55;
 	font-size: 15px;
 	font-weight: 400;
 	padding: 8px 2px;
