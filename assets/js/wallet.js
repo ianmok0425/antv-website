@@ -59,7 +59,7 @@ const initialize = () => {
         //Now we check to see if MetaMask is installed
         if (!isMetaMaskInstalled()) {
             //If it isn't installed we ask the user to click to install it
-            onboardButton.innerText = 'Please install MataMask to add ANTV to wallet';
+            onboardButton.innerText = 'Please install MetaMask to add ANTV';
             //The button is now disabled
             onboardButton.disabled = true;
         } else {
