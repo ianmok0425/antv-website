@@ -1382,7 +1382,7 @@ p {
   filter: blur(4px);
   -webkit-filter: blur(4px);
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 500px;
   position: relative;
   z-index: 1;
 }

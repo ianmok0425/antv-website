@@ -139,4 +139,6 @@ const countDownClock = (number = 100, format = 'seconds') => {
 	enter number and format
 	days, hours, minutes or seconds
 */
-countDownClock(90, 'days');
+countDownClock(
+	(new Date(2021, 8, 6, 0, 0, 0) - new Date()) / 1000, 
+	'seconds');
