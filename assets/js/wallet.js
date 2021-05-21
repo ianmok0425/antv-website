@@ -32,6 +32,7 @@ const initialize = () => {
             });
 
             if (wasAdded) {
+                onboardButton.disabled = true
                 onboardButton.innerHTML = 'Added ANTV To Wallet';
             } else {
                 onboardButton.innerHTML = 'Add ANTV To Wallet';
@@ -58,11 +59,9 @@ const initialize = () => {
         //Now we check to see if MetaMask is installed
         if (!isMetaMaskInstalled()) {
             //If it isn't installed we ask the user to click to install it
-            onboardButton.innerText = 'Click here to install MetaMask!';
-            //When the button is clicked we call th is function
-            onboardButton.onclick = onClickInstall;
+            onboardButton.innerText = 'Please install MataMask to add ANTV to wallet';
             //The button is now disabled
-            onboardButton.disabled = false;
+            onboardButton.disabled = true;
         } else {
             //If MetaMask is installed we ask the user to connect to their wallet
             onboardButton.innerText = 'Connect To Wallet';
