@@ -43,14 +43,18 @@ const initialize = () => {
     }
     const connectToWallet = async () => {
         try {
+            console.log("connecting to the wallet")
             // Will open the MetaMask UI
             // You should disable this button while the request is pending!
-            await ethereum.request({
+            const rsp = await ethereum.request({
                 method: 'eth_requestAccounts'
             });
+            console.log("rsp: " + rsp)
             onboardButton.innerHTML = 'Add ANTV To Wallet';
             onboardButton.onclick = addANTVTokenToWallet;
         } catch (error) {
+            onboardButton.innerHTML = 'Fail To Connect Wallet';
+            onboardButton.onclick = connectToWallet;
             console.error(error);
         }
     };
