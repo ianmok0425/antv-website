@@ -190,6 +190,7 @@
          <div class="container text-center">
             <div class="row align-items-center">
                <h1>Token Distribution</h1>
+               <div id="piechart"></div>
             </div>
          </div>
       </section>
@@ -201,35 +202,58 @@
                <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
                   <div class="section-title text-center mb-55">
                      <h2 class="text-white mb-20 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Road Map</h2>
-                     <p class="text-white wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore.</p>
+                     <p class="text-white wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        Antv Coin was launched 20 May 2021. The numbers on the roadmap represent the quarter of 2021.
+                        With the help of our community we could always work way faster than expected!</p>
                   </div>
                </div>
             </div>
             <div class="roadmap-wrapper justify-content-center">
                <div class="roadmap-item">
                   <span class="circle"></span>
-                  <span>January 2023</span>
-                  <p>Exchange Bitcontent to Bitcoin</p>
+                  <span>June 2021</span>
+                  <p>*Website Launch</p>
+                  <p>*White Paper</p>
+                  <p>*Promotion/Marketing</p>
+                  <p>*PancakeSwap Listing</p>
+                  <p>*Add Liquidity</p>
                </div>
                <div class="roadmap-item">
                   <span class="circle"></span>
-                  <span>February 2023</span>
-                  <p>BTCC mode of payment in Bitconcent</p>
+                  <span>July 2021</span>
+                  <p>*Request Gate IO Listing
+                     <br>*Airdrop
+                     <br>*Promotion/Marketing
+                     <br>*Coin Market Cap Listing
+                     <br>*Community</p>
                </div>
                <div class="roadmap-item">
                   <span class="circle"></span>
-                  <span>March 2023</span>
-                  <p>Exchange Bitcontent to Bitcoin</p>
+                  <span>Aug 2021</span>
+                  <p>*Other DEX Listing
+                  <br>*Develop AntvSwap
+                  <br>*Dex Trading Bot
+                  <br>*Promotion/Marketing
+                  <br>*Community
+               </p>
                </div>
                <div class="roadmap-item">
                   <span class="circle"></span>
-                  <span>April 2023</span>
-                  <p>Send-Receive coin Bitconcent &amp; mobile</p>
+                  <span>Sep 2021</span>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
                </div>
                <div class="roadmap-item">
                   <span class="circle"></span>
-                  <span>May 2023</span>
-                  <p>Coin Marketcap, World Coin Index</p>
+                  <span>Oct 2021</span>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
+                  <p>Promote ANTV Payment</p>
                </div>
             </div>
          </div>
@@ -290,6 +314,7 @@
                   <div class="contact-wrapper mb-30">
                      <h2 class="mb-20 wow fadeInDown" data-wow-delay=".2s">Contact Us</h2>
                      <p>Have questions? We’re happy to help.</p>
+                     <p>Email: <a href="mailto:info@antvcoin.com">info@antvcoin.com</a></p>
                      <form action="#" onsubmit="sendmail(this)" id="contact-form" class="contact-form">
                         <div class="row">
                            <div class="col-lg-12">
@@ -373,8 +398,35 @@
       <script src="assets/js/bootstrap.bundle-5.0.0.alpha-1-min.js"></script>
       <script src="assets/js/wow.min.js"></script>
       <script src="assets/js/mail.js"></script>
+      <script src="assets/js/chart.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="assets/js/wallet.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+         // Load google charts
+         google.charts.load('current', {'packages':['corechart']});
+         google.charts.setOnLoadCallback(drawChart);
+         
+         // Draw the chart and set the chart values
+         function drawChart() {
+           var data = google.visualization.arrayToDataTable([
+           ['Antv Coin Distribution', 'Percentage'],
+           ['Private Sales', 10],
+           ['Liquidity', 10],
+           ['Air Drop', 20],
+           ['Promotion', 10],
+           ['Anti Virus Community', 20],
+           ['Mining Farm', 30]
+         ]);
+         
+           // Optional; add a title and set the width and height of the chart
+           var options = {'title':'Antv Coin Distribution', 'width':1000, 'height':400, 'backgroundColor': 'transparent'};
+         
+           // Display the chart inside the <div> element with id="piechart"
+           var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+           chart.draw(data, options);
+         }
+         </script>
    </body>
 </html>
