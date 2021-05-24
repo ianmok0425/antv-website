@@ -205,7 +205,8 @@
                      <h2 class="text-white mb-20 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Road Map</h2>
                      <p class="text-white wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                         Antv Coin was launched 20 May 2021. The numbers on the roadmap represent the quarter of 2021.
-                        With the help of our community we could always work way faster than expected!</p>
+                        With the help of our community we could always work way faster than expected!
+                     </p>
                   </div>
                </div>
             </div>
@@ -226,17 +227,18 @@
                      <br>*Airdrop
                      <br>*Promotion/Marketing
                      <br>*Coin Market Cap Listing
-                     <br>*Community</p>
+                     <br>*Community
+                  </p>
                </div>
                <div class="roadmap-item">
                   <span class="circle"></span>
                   <span>Aug 2021</span>
                   <p>*Other DEX Listing
-                  <br>*Develop AntvSwap
-                  <br>*Dex Trading Bot
-                  <br>*Promotion/Marketing
-                  <br>*Community
-               </p>
+                     <br>*Develop AntvSwap
+                     <br>*Dex Trading Bot
+                     <br>*Promotion/Marketing
+                     <br>*Community
+                  </p>
                </div>
                <div class="roadmap-item">
                   <span class="circle"></span>
@@ -404,28 +406,29 @@
       <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
       <script>
- var options = {
-          series: [10, 20, 20, 10, 10, 30],
-          chart: {
-          type: 'pie',
-        },
-        labels: ['Public Sales', 'Liquidity', 'Air Drop', 'Promotion', 'Anti Virus Community', 'Mining Farm'],
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }]
-        };
-
-
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-chart.render();
-         </script>
+         var options = {
+                  series: [10, 20, 20, 10, 10, 30],
+                  chart: {
+                  type: 'pie',
+                },
+                labels: ['Public Sales', 'Liquidity', 'Air Drop', 'Promotion', 'Anti Virus Community', 'Mining Farm'],
+                responsive: [{
+                  breakpoint: 480,
+                  options: {
+                    chart: {
+                    },
+                    legend: {
+                      position: 'bottom'
+                    }
+                  }
+                }]
+                };
+         
+         
+         var chart = new ApexCharts(document.querySelector("#chart"), options);
+         
+         chart.render();
+                 
+      </script>
    </body>
 </html>
