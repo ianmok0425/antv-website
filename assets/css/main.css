@@ -1384,6 +1384,7 @@ p {
   padding-top: 100px;
   padding-bottom: 500px;
   position: relative;
+  height: 600px;
   z-index: 1;
 }
 
