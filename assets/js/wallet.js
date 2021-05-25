@@ -63,7 +63,7 @@ const initialize = () => {
         //Now we check to see if MetaMask is installed
         if (!isMetaMaskInstalled()) {
             //If it isn't installed we ask the user to click to install it
-            onboardButton.innerText = 'Please install MetaMask to add ANTV';
+            onboardButton.innerText = 'Please install MetaMask';
             //The button is now disabled
             onboardButton.disabled = true;
         } else {
