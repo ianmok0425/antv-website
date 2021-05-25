@@ -1,7 +1,7 @@
 const tokenAddress = '0x60a5445ff3c1a8398770f0d27305752f017211b8';
 const tokenSymbol = 'ANTV';
 const tokenDecimals = 18;
-const tokenImage = 'https://appsurfs.com/assets/img/apple-touch-icon.png';
+const tokenImage = 'https://antvcoin.com/assets/img/logo.png';
 
 const initialize = () => {
     //Basic Actions Section
